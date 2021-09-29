@@ -1,0 +1,20 @@
+.blocks_x3_wrapper {
+    width: 1140px;
+    display: block;
+    margin: auto;
+}
+
+.blocks_x3_wrapper .block_element {
+    display: inline-block;
+    width: calc(100% / 3 - 40px);
+    float: left;
+}
+
+.blocks_x3_wrapper .block_element:nth-of-type(2) {
+    margin: 0 20px;
+}
+
+
+.blocks_x3_wrapper .block_element .image_wrapper img {
+    width: 100%;
+}
