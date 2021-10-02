@@ -43,10 +43,10 @@
 
 .blocks_x3_wrapper .blocks_elements_wrapper .block_element {
     display: inline-block;
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 40px );
     float: left;
     position: relative;
-    transform: translateX(10%)
+    transform: translateX(5px);
 
 
 }
@@ -84,7 +84,16 @@
     padding-top: 5%;
 
 }
-.blocks_x3_wrapper .title_blocks_x3:before, .blocks_x3_wrapper .title_blocks_x3:after {
+.blocks_x3_wrapper .title_blocks_x3:before {
+    content: '';
+    display: inline-block;
+    width: 190px;
+    margin-right: 40px;
+    height: 1px;
+    background-color: #333333;
+}
+
+.blocks_x3_wrapper .title_blocks_x3:after{
     content: '';
     display: inline-block;
     width: 190px;
@@ -175,7 +184,6 @@
 
 .blocks_x3_wrapper .blocks_elements_wrapper .block_element .content_wrapper .buttons_wrapper:before{
     left: 20px;
-    content: "\f061";
     font-family: "Font Awesome 5 Pro";
     font-weight: 300;
     display: inline-block;
@@ -199,8 +207,14 @@
     display: inline-block;
     position: absolute;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(35%, -50%);
     z-index: -1;
     border-radius: 100px;
     transition: all 0.6s;
+}
+.blocks_x3_wrapper .blocks_elements_wrapper .block_element .content_wrapper .buttons_wrapper a{
+    color: black;
+    text-decoration: none;
+    font-family: "Brandon Grotesque", sans-serif;
+
 }
